@@ -4,32 +4,28 @@ body,
 html, 
 div#react-container{
     width: 100%;
+
 }
 
 body{
     margin: 0;
     padding: 10px 10px;
+    display: inline-flex;
 }
 
-div.board {
+div.board{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 100vw));
-    grid-template-rows: repeat(10, 1fr);
-    grid-gap: 0.50em;
-    /*display: flexbox;
-    flex-wrap: row;
-    */padding: 5px 5px;
-
-    width: 100vw;
-    
-    background-color: brown;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-gap: 01.50em;
+    padding: 5px 5px;
+    width: 25vw;
     background: #eab92d;
     background: -moz-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(57%, #eab92d), color-stop(99%, #c79810));
     background: -webkit-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
     background: -o-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
     background: -ms-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
-    background: radial-gradient(ellipse at center, #eab92d 57%, #c79810 99%);
+    background: radial-gradient(ellipse at center, #68680445 57%, #10c7a8 99%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eab92d', endColorstr='#c79810', GradientType=1);
 
 
@@ -40,10 +36,10 @@ div.note {
     width: 150px;
     background-color: yellow;
     margin: 10px 10px;
-    position: relative;
     cursor: -webkit-grab;
     -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+
 }
 
 div.note:active {
@@ -61,7 +57,7 @@ div.note:hover > span {
 }
 
 div.note > span {
-    position: absolute;
+    
     bottom: 2px;
     right: 2px;
     opacity: 0;
