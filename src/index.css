@@ -3,14 +3,14 @@
 body,
 html, 
 div#react-container{
-    width: 100%;
+    width: 100vw;
 
 }
 
 body{
     margin: 0;
     padding: 10px 10px;
-    display: inline-flex;
+    display: flex;
 }
 
 div.board{
@@ -18,7 +18,7 @@ div.board{
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     grid-gap: 01.50em;
     padding: 5px 5px;
-    width: 25vw;
+    width: 80vw;
     background: #eab92d;
     background: -moz-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(57%, #eab92d), color-stop(99%, #c79810));
@@ -80,13 +80,14 @@ div.board button {
 }
 
 #add {
+    text-align: right;
   position: absolute;
   background-color: #5cb85c;
   height: 3rem;
 }
 
 #edit {
-  background-color: #337ab7;
+    background-color: #337ab7;
 }
 
 #save {
